@@ -33,3 +33,22 @@ Frontend:
 - Delete και Update
 - Validation
 - Αναζήτηση ανά σκηνοθέτη
+## Προαπαιτούμενα
+- .NET 10 SDK
+- Node.js (LTS)
+
+## Πώς να τρέξει
+
+Άνοιξε **δύο τερματικά**.
+
+Τερματικό 1 (backend, ξεκίνα πρώτα αυτό):
+
+    dotnet run --project Movies.API
+
+Τερματικό 2 (frontend):
+
+    cd movies-web
+    npm install
+    npm run dev
+
+Μετά άνοιξε http://localhost:5173
