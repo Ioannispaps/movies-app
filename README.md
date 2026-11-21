@@ -9,30 +9,6 @@ Full-stack εφαρμογή ταινιών.
 - Entity Framework Core + SQLite
 - React (Vite)
 
-## Πώς να τρέξει
-
-Backend:
-
-    dotnet run --project Movies.API
-
-(τρέχει στο http://localhost:5012)
-
-Frontend:
-
-    cd movies-web
-    npm install
-    npm run dev
-
-(τρέχει στο http://localhost:5173)
-
-## Endpoints
-- GET /api/movies
-- POST /api/movies
-
-## Επόμενα βήματα
-- Delete και Update
-- Validation
-- Αναζήτηση ανά σκηνοθέτη
 ## Προαπαιτούμενα
 - .NET 10 SDK
 - Node.js (LTS)
@@ -43,12 +19,29 @@ Frontend:
 
 Τερματικό 1 (backend, ξεκίνα πρώτα αυτό):
 
-    dotnet run --project Movies.API
+```
+dotnet run --project Movies.API
+```
+
+Τρέχει στο http://localhost:5012
 
 Τερματικό 2 (frontend):
 
-    cd movies-web
-    npm install
-    npm run dev
+```
+cd movies-web
+npm install
+npm run dev
+```
 
 Μετά άνοιξε http://localhost:5173
+
+Η βάση (SQLite) δημιουργείται αυτόματα με 3 ταινίες την πρώτη φορά που τρέχει το API.
+
+## Endpoints
+- GET /api/movies
+- POST /api/movies
+
+## Επόμενα βήματα
+- Delete και Update
+- Validation
+- Αναζήτηση ανά σκηνοθέτη
